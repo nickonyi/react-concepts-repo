@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 
 function CandyDespenser() {
-  const initialCandies = ['snickers', 'skittles', 'twix', 'milky way'];
+  const initialCandies = [
+    'snickers',
+    'skittles',
+    'twix',
+    'milky way',
+    'wandy mandy',
+  ];
   const [candies, setCandies] = useState(initialCandies);
   const dispense = (candy) => {
     setCandies((allCandies) => allCandies.filter((c) => c !== candy));
